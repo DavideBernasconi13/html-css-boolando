@@ -1,3 +1,8 @@
-h1 {
-    color: coral;
+/* Custom properties */
+:root {
+    --color-header-color: #ff6900;
+    --color-negative-color: #ffffff;
+    --color-main-color: #000000;
+    --color-accent-color-red: #ff0000;
+    --color-accent-color-green: #008000;
 }
