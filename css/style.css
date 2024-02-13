@@ -51,10 +51,11 @@ ul.d-flex li {
 /* Main */
 main {
     margin-top: 100px;
+    margin-bottom: 80px;
 }
 
 .card {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 10px);
 }
 
 .card-img {
@@ -87,27 +88,24 @@ main {
 .preference {
     position: absolute;
     background-color: var(--color-negative-color);
-    padding: 10px;
+    padding: 10px 18px;
     top: 10px;
     right: 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .card-text-label {
-    display: flex;
-    font-weight: 800;
-}
-
-.discount {
     position: absolute;
     bottom: 45px;
+}
+
+.card-text-label span {
     padding: 3px 8px;
+    color: var(--color-negative-color);
 }
 
 .discount {
     background-color: var(--color-accent-color-red);
-    color: var(--color-negative-color);
-    gap: 5px;
 }
 
 .category {
