@@ -136,3 +136,14 @@ span.price {
 span.price-discount {
     text-decoration-line: line-through;
 }
+
+/* Footer */
+footer {
+    background-color: var(--color-main-color);
+    color: var(--color-negative-color);
+    font-size: 0.7rem;
+}
+
+.footer-right ul {
+    font-size: 1rem;
+}
