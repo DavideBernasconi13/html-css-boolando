@@ -6,3 +6,49 @@
     --color-accent-color-red: #ff0000;
     --color-accent-color-green: #008000;
 }
+
+/* General */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-negative-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+.fix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 80px;
+    z-index: 999;
+}
+
+header {
+    background-color: var(--color-header-color);
+    color: var(--color-negative-color);
+    font-weight: 600;
+    -webkit-box-shadow: 7px 17px 46px -9px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 7px 17px 46px -9px rgba(0, 0, 0, 0.77);
+    box-shadow: 7px 17px 46px -9px rgba(0, 0, 0, 0.77);
+}
+
+.logo img {
+    width: 120px;
+}
+
+ul.d-flex li {
+    margin-right: 10px;
+}
+
+/* Main */
+main {
+    margin-top: 100px;
+}
