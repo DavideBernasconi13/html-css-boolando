@@ -11,6 +11,8 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 0.85rem;
+    background-color: var(--color-negative-color);
+    color: var(--color-main-color);
 }
 
 a {
@@ -18,14 +20,11 @@ a {
     color: var(--color-negative-color);
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 /* Header */
 .fix {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     margin-bottom: 80px;
     z-index: 999;
@@ -34,18 +33,27 @@ a:hover {
 header {
     background-color: var(--color-header-color);
     color: var(--color-negative-color);
+    height: 70px;
     font-weight: 600;
-    -webkit-box-shadow: 7px 17px 46px -9px rgba(0, 0, 0, 0.77);
-    -moz-box-shadow: 7px 17px 46px -9px rgba(0, 0, 0, 0.77);
-    box-shadow: 7px 17px 46px -9px rgba(0, 0, 0, 0.77);
+    -webkit-box-shadow: 0px 1px 3px #666;
+    -moz-box-shadow: 0px 1px 3px #666;
+    box-shadow: 0px 1px 3px #666;
+}
+
+nav {
+    height: 70px;
 }
 
 .logo img {
-    width: 120px;
+    height: 30px;
 }
 
-ul.d-flex li {
+ul li {
     margin-right: 10px;
+}
+
+nav ul li a:first-child:hover {
+    text-decoration: underline;
 }
 
 /* Main */
@@ -85,15 +93,6 @@ main {
 }
 
 /* Card text label */
-.preference {
-    position: absolute;
-    background-color: var(--color-negative-color);
-    padding: 10px 18px;
-    top: 10px;
-    right: 0;
-    font-size: 2rem;
-}
-
 .card-text-label {
     position: absolute;
     bottom: 45px;
@@ -110,6 +109,15 @@ main {
 
 .category {
     background-color: var(--color-accent-color-green);
+}
+
+.preference {
+    position: absolute;
+    background-color: var(--color-negative-color);
+    padding: 10px;
+    top: 10px;
+    right: 0;
+    font-size: 1.5rem;
 }
 
 .preference:hover {
